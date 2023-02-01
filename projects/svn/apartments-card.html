@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <!-- Useful meta tags -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<meta name="google" content="notranslate">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Description...">
+<meta name="keywords" content="HTML, CSS, JavaScript, Shop">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#9B9B9B">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- Favicons -->
+<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="16x16" href="/">
+<link rel="icon" type="image/png" sizes="32x32" href="/">
+<link rel="icon" type="image/png" sizes="96x96" href="/">
+<link rel="icon" type="image/png" sizes="120x120" href="/">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
+<!-- <link rel="manifest" href="./images/manifest.json"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=06c9f708-a971-458e-b11e-2971df9daab0&lang=ru_RU"
+    type="text/javascript">
+</script>
+<link rel="stylesheet" href="./css/main.min.css" />
+  <title>Title</title>
+</head>
+
+<body>
+  <header class="header not-animate header-apartments-card header-black">
+
+    <div class="header__bg"></div>
+    <div class="container">
+        <div class="header_wrap">
+            <a href="/" class="header_logo">
+                <img class="desktop" src="./images/main_logo--black.svg" alt="">
+                <picture><source srcset="./images/mob_logo.webp" type="image/webp"><img class="mob" src="./images/mob_logo.png" alt=""></picture>
+                <img class="header_logo__scroll" src="./images/icons/logo-group-scroll.svg" alt="">
+            </a>
+            <div class="header_right">
+                <nav class="header_menu">
+                    <ul>
+                        <li>
+                            <a href="#">VSN Realty</a>
+                        </li>
+                        <li><a href="#">VSN Business</a></li>
+                        <li><a href="#">Ipoteka Group</a>
+                        </li>
+                        <li><a href="#">О компании</a>
+                        </li>
+                        <li><a href="#">Контакты</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <div class="header__subs">
+
+                    <div class="header__subs_item">
+                        <ul>
+                            <li><a href="#">Новостройки Москвы</a></li>
+                            <li><a href="#">Готовые Квартиры</a></li>
+                            <li><a href="#">Загородная недвижимость</a></li>
+                            <li><a href="#">Коммерческая недвижимость</a></li>
+                            <li><a href="#">Ипотека</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__subs_item">
+                        <ul>
+                            <li><a href="#">Новостройки Москвы</a></li>
+                            <li><a href="#">Готовые Квартиры</a></li>
+                            <li><a href="#">Загородная недвижимость</a></li>
+                            <li><a href="#">Коммерческая недвижимость</a></li>
+                            <li><a href="#">Ипотека</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__subs_item">
+                        <ul>
+                            <li><a href="#">Новостройки Москвы</a></li>
+                            <li><a href="#">Готовые Квартиры</a></li>
+                            <li><a href="#">Загородная недвижимость</a></li>
+                            <li><a href="#">Коммерческая недвижимость</a></li>
+                            <li><a href="#">Ипотека</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__subs_item">
+                        <ul>
+                            <li><a href="#">Новостройки Москвы</a></li>
+                            <li><a href="#">Готовые Квартиры</a></li>
+                            <li><a href="#">Загородная недвижимость</a></li>
+                            <li><a href="#">Коммерческая недвижимость</a></li>
+                            <li><a href="#">Ипотека</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__subs_item">
+                        <ul>
+                            <li><a href="#">Новостройки Москвы</a></li>
+                            <li><a href="#">Готовые Квартиры</a></li>
+                            <li><a href="#">Загородная недвижимость</a></li>
+                            <li><a href="#">Коммерческая недвижимость</a></li>
+                            <li><a href="#">Ипотека</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="header__widget">
+                    <form method="post" class="header_search">
+                        <!-- <img src="" alt="" class="header_search__icon"> -->
+                        <button class="header_search__icon"></button>
+                        <!-- <span class="header_search__text">Поиск</span> -->
+                        <input type="text" placeholder="Поиск" class="header_search__text">
+                    </form>
+                    <div class="header__city">
+                        <svg>
+                            <use xlink:href="images/sprites/sprite-mono.svg#switch-city"></use>
+                        </svg>
+                        Москва
+                    </div>
+                    <div class="header_contacts">
+                        <div class="header_contacts__phone">
+                            <a href="tel:88001864436">
+                                <svg>
+                                    <use xlink:href="images/sprites/sprite-mono.svg#circle-arrow-up"></use>
+                                </svg>
+                                8 800 186-44-3
+                            </a>
+                            <div class="header_contacts__popup">Обратный звонок</div>
+                        </div>
+                        <div class="header__social social">
+                            <a href="#" class="social__link social__link--wh" target="_blank">
+                                <svg>
+                                    <use xlink:href="images/sprites/sprite-mono.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="social__link social__link--tg" target="_blank">
+                                <svg>
+                                    <use xlink:href="images/sprites/sprite-mono.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="header__toggler">
+
+                <div class="header__toggler_btn">
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1" y1="1" x2="19" y2="1" stroke="white" stroke-width="2" stroke-linecap="round" />
+                        <line x1="1" y1="8" x2="19" y2="8" stroke="white" stroke-width="2" stroke-linecap="round" />
+                        <line x1="1" y1="15" x2="19" y2="15" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="header_mobmenu">
+        <div class="header_mobmenu__col">
+            <h3 class="header_mobmenu__title"><img src="./images/icons/hm_1.svg" alt=""
+                    class="header_mobmenu__title_pre" /> VSN Realty </h3>
+            <ul>
+                <li><a href="">Новостройки Москвы</a></li>
+                <li><a href="">Новостройки Подмосковья</a></li>
+                <li><a href="">Вторичная недвижимость</a></li>
+                <li><a href="">Коммерческая недвижимость</a></li>
+                <li><a href="">Ипотека</a></li>
+                <li><a href="">Сервисы</a></li>
+                <li><a href="">Каталог ЖК</a></li>
+            </ul>
+
+            <a href="#" class="header_mobmenu_titlelink">
+
+                <h3 class="header_mobmenu__title"><img src="./images/icons/hm_3.svg" alt=""
+                        class="header_mobmenu__title_pre">Ipoteka Group <img src="./images/icons/link_arr.svg" alt=""
+                        class="header_mobmenu__title_arr"> </h3>
+            </a>
+        </div>
+        <div class="header_mobmenu__col">
+            <h3 class="header_mobmenu__title"><img src="./images/icons/hm_2.svg" alt=""
+                    class="header_mobmenu__title_pre"> VSN Business</h3>
+            <ul>
+                <li><a href="">Новостройки Москвы</a></li>
+                <li><a href="">Квартиры в построенных домах</a></li>
+                <li><a href="">Лофты и апартаменты</a></li>
+                <li><a href="">Москва-Сити </a></li>
+                <li><a href="">Пентхаусы Москвы </a></li>
+                <li><a href="">Каталог ЖК</a></li>
+            </ul>
+        </div>
+        <div class="header_mobmenu__col">
+            <h3 class="header_mobmenu__title">Компания</h3>
+            <ul>
+                <li><a href="">Кейсы </a></li>
+                <li><a href="">Центр обучения</a></li>
+                <li><a href="">Партнеры</a></li>
+                <li><a href="">Награды</a></li>
+                <li><a href="">Корпоративная жизнь</a></li>
+                <li><a href="">Карьера в компании</a></li>
+                <li><a href="">Пресс центр</a></li>
+            </ul>
+        </div>
+        <div class="header_mobmenu__col">
+            <h3 class="header_mobmenu__title">Контакты</h3>
+            <div class="phone_wrap">
+                <a href="tel:+74951864436" class="header_mobmenu_phone">7 (495) 186-44-36 <img
+                        src="./images/icons/ph.svg" alt=""></a>
+                <span class="header_mobmenu_phone__under">Для жителей Москвы и Московской области</span>
+            </div>
+            <div class="phone_wrap">
+                <a href="tel:88008000000" class="header_mobmenu_phone">8 (800) 800-00-00 <img
+                        src="./images/icons/ph.svg" alt=""></a>
+                <span class="header_mobmenu_phone__under">Бесплатный звонок по России</span>
+            </div>
+            <div class="header_mobmenu_social">
+                <a href="#" class="header_mobmenu_social__item">
+                    <img src="./images/icons/tg.svg" alt=""> <span>Telegram</span>
+                </a>
+                <a href="#" class="header_mobmenu_social__item">
+                    <img src="./images/icons/wh.svg" alt=""> <span>Whatsapp</span>
+                </a>
+            </div>
+            <span class="header_mobmenu_phone__under">Адрес главного офиса</span>
+            <div class="header_mobmenu_address">
+                Москва, Новодмитровская ул., д. 2, корп. 1, <br>
+                МФК «Савеловский Сити» (Жёлтая башня) <br>
+            </div>
+            <div class="header_mobmenu_address">
+
+                Ежеденевно, 09:00 – 18:00
+            </div>
+
+            <a href="mailto:vsnr@vsnr.ru" class="header_mobmenu_email">vsnr@vsnr.ru</a>
+
+            <a href="#" class="header_mobmenu_office">Офисы продаж</a>
+
+            <div class="header_mobmenu_social" style="    padding-bottom: 50px;
+          margin-bottom: 50px;
+          border-bottom: 1px solid #ccc;">
+                <a href="#" class="header_mobmenu_social__item big_mr">
+                    <img src="./images/icons/vk.svg" alt="">
+                </a>
+                <a href="#" class="header_mobmenu_social__item big_mr">
+                    <img src="./images/icons/tg.svg" alt="">
+                </a>
+                <a href="#" class="header_mobmenu_social__item big_mr">
+                    <img src="./images/icons/yt.svg" alt="">
+                </a>
+            </div>
+
+            <form class="header_mobmenu__search">
+                <label for="">
+                    <input type="text" class="header_mobmenu__search_input" placeholder="Найти недвижимость">
+                    <div class="header_mobmenu__search_btn"></div>
+                    <button class="header_mobmenu__search_submit"></button>
+                </label>
+                <div class="header_mobmenu__search_bottom">
+                    <div class="header_mobmenu__search_variable active">Сданные</div>
+                    <div class="header_mobmenu__search_variable">С отделкой</div>
+                    <div class="header_mobmenu__search_variable">С терассой</div>
+                    <div class="header_mobmenu__search_variable">В небоскрёбе</div>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+
+  <main>
+    <div class="apartments-card">
+    <div class="container">
+        <div class="apartments-card__inner">
+            <div class="apartments-card__left">
+                <h3 class="apartments-card__title">
+                    1-комнатная квартира 97 м²
+                </h3>
+                <div class="swiper apartments-card__slider">
+                    <div class="swiper-wrapper" id="gallery-primary">
+                        <a class="swiper-slide apartments-card__slide" href="./images/apartments-card-1.jpg">
+                            <picture><source srcset="./images/apartments-card-1.webp" type="image/webp"><img src="./images/apartments-card-1.jpg" alt="1-комнатная квартира 97 м²"></picture>
+                        </a>
+                        <a class="swiper-slide apartments-card__slide" href="./images/apartments-card-1.jpg">
+                            <picture><source srcset="./images/apartments-card-1.webp" type="image/webp"><img src="./images/apartments-card-1.jpg" alt="1-комнатная квартира 97 м²"></picture>
+                        </a>
+                        <a class="swiper-slide apartments-card__slide" href="./images/apartments-card-1.jpg">
+                            <picture><source srcset="./images/apartments-card-1.webp" type="image/webp"><img src="./images/apartments-card-1.jpg" alt="1-комнатная квартира 97 м²"></picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="apartments-card__control">
+                    <div class="apartments-card__pagination pagination-primary"></div>
+                    <div class="apartments-card__navigation">
+                        <div class="apartments-card-nav-button-prev navigation-primary navigation-primary--prev"></div>
+                        <div class="apartments-card-nav-button-next navigation-primary navigation-primary--next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="apartments-card__content">
+                <ul class="apartments-card__price">
+                    <li>
+                        <p>Стоимость</p>
+                        <p>
+                            14 233 597
+                            <span>₽</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Цена м2
+                        </p>
+                        <p>
+                            233 597
+                            <span>₽/м²</span>
+                        </p>
+                    </li>
+                </ul>
+                <div class="apartments-card__btns">
+                    <button type="button"
+                        class="apartments-card__btn btn-reset btn-primary btn--schist btn-primary--arrow">
+                        Забронировать
+                        <svg>
+                            <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="apartments-card__btn btn-reset btn-third btn-third--arrow">
+                        Консультация
+                        <svg>
+                            <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="apartments-card__info--tablet">
+                    <li>
+                        <span>Этаж</span>
+                        <span>10</span>
+                    </li>
+                    <li>
+                        <span>Комнат</span>
+                        <span>1</span>
+                    </li>
+                    <li>
+                        <span>Площадь</span>
+                        <span>97 м²</span>
+                    </li>
+                </div>
+                <div class="apartments-card__info">
+                    <ul>
+                        <li class="apartments-card__info--frame">
+                            <span>Корпус</span>
+                            <span>Рубенс</span>
+                        </li>
+                        <li class="apartments-card__info--floor">
+                            <span>Этаж</span>
+                            <span>10</span>
+                        </li>
+                        <li class="apartments-card__info--section">
+                            <span>Секция</span>
+                            <span>1</span>
+                        </li>
+                        <li class="apartments-card__info--room">
+                            <span>Условный номер</span>
+                            <span>№321</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="apartments-card__info--square">
+                            <span>Площадь</span>
+                            <span>97 м²</span>
+                        </li>
+                        <li class="apartments-card__info--rooms">
+                            <span>Комнат</span>
+                            <span>1</span>
+                        </li>
+                        <li class="apartments-card__info--peculiar">
+                            <span>Особенности</span>
+                            <span>
+                                отделка чистовая,
+                                особенность особенная
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="apartments-card__beside card-small">
+                    <a href="#" class="card-small__inner">
+                        <div class="card-small__img">
+                            <picture><source srcset="./images/card-small.webp" type="image/webp"><img src="./images/card-small.jpg" alt="Жилой комплекс «Селигер Сити»"></picture>
+                        </div>
+                        <div class="card-small__content">
+                            <h3 class="card-small__title">
+                                Жилой комплекс «Селигер Сити»
+                            </h3>
+                            <p class="card-small__address">
+                                Москва, САО, Ильменский проезд, дом 14,
+                            </p>
+                            <div class="card-small__location location-items">
+                                <span class="location-item location-item--geo">САО</span>
+                                <span class="location-item location-item--circle location-item--circle-red">
+                                    м. Селигерская
+                                </span>
+                                <span class="location-item location-item--time">5 мин</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="about-apartment">
+    <div class="container">
+        <h2 class="about-apartment__title">
+            О квартире
+        </h2>
+        <div class="about-apartment__inner">
+            <p class="about-apartment__text">
+                Продаётся великолепный двухуровневый пентхаус с 2 террасами общей площадью 159.33 м2 на 6 этаже корпуса
+                «Порода» элитного ЖК «Большая Дмитровка IX». Предлагаемым планировочным решением на 1-м уровне
+                предусмотрены большая прихожая, просторная гостиная площадью 47.8 м2, совмещённая с кухней, 2 спальни
+                23.2 м2 и 24.4 м2, гардеробная, 3 санузла и терраса площадью 26.2 м2. 2-й уровень занимает просторная
+                терраса площадью 63 м2, которая подойдёт и для посиделок с друзьями, и для тихих семейных вечеров. С
+                террасы открываются великолепные виды на исторический центр столицы и Кремль.
+            </p>
+            <p class="about-apartment__text about-apartment__text--great">
+                Высота потолков составляет 3 м. Современные окна
+                с повышенной шумоизоляцией позволяют отдыхать
+                от городского шума, не покидая центра столицы.
+            </p>
+            <p class="about-apartment__text">
+                Современные здания выполнены по проекту известного архитектурного бюро «Цимайло, Ляшенко и партнёры».
+                Особняк «Порода» оформлен камнем цвета бутылочного стекла. Стойки в парадных лобби современных особняков
+                будут выполнены из натурального камня. Лифты выполнены по индивидуальному проекту. В каждом особняке
+                предусмотрено 3 варианта отделки квартир. Для особняков «Свет» и «Порода» предлагаются 3 вида оформления
+                в современном стиле.
+            </p>
+            <p class="about-apartment__text">
+                В комплексе реализована концепция «закрытый двор без машин». Все автомобили будут размещены в
+                3-уровневом подземном паркинге на 207 машино- и 15 мото-мест. Здесь расположится автомойка и станция для
+                зарядки электромобилей. Для спорткаров предусмотрен отдельный лифт.
+            </p>
+            <p class="about-apartment__text">
+                Во дворе будет выполнено освещение и озеленение по специальному дизайн-проекту. В зимнее время
+                предусмотрен электрический подогрев уличных крылец и лестниц входных групп. Закрытая территория
+                находится под круглосуточной охраной и видеонаблюдением. Система контроля доступа на входах и въездах не
+                позволит посторонним проникнуть в комплекс. Предусмотрена система радиофикации и оповещения о
+                чрезвычайных ситуациях. Кроме того, для хранения ценных вещей жильцы смогут пользоваться депозитарием.
+            </p>
+            <p class="about-apartment__text">
+                Для любителей спорта распахнёт свои двери фитнес-клуб с видом на живописный сад. Дети смогут посещать
+                развивающий центр. В пешей доступности находится вся инфраструктура центра Москвы: магазины, кафе,
+                рестораны, салоны красоты. Неподалёку находятся Мэрия Москвы, Большой и Малый театры, Театр
+                Станиславского, Александровский сад, Кремль, Исторический музей и другие достопримечательности столицы.
+            </p>
+            <p class="about-apartment__text">
+                ЖК «Большая Дмитровка IX» находится в 7-10 минутах пешком от станций метро «Охотный ряд», «Пушкинская»,
+                «Театральная», «Площадь Революции», расстояние до Кремля - меньше километра. До Бульварного кольца -
+                всего 500 м, до Садового - 1.5 км.
+            </p>
+        </div>
+    </div>
+</section>
+    <section class="stayed-questions">
+    <div class="container">
+        <h2 class="stayed-questions__title title-2">
+            Остались вопросы?
+        </h2>
+        <div class="stayed-questions__inner grid">
+            <h3 class="stayed-questions__subtitle">
+                Оставьте заявку и наш специалист с вами  в ближайшее время
+                для подробной консультаци
+            </h3>
+            <div class="stayed-questions__left">
+                <picture><source srcset="./images/woman-2.webp" type="image/webp"><img src="./images/woman-2.jpg" alt="Елизавета" width="230" height="230"></picture>
+                <span class="stayed-questions__name regular_20">Елизавета</span>
+                <span class="stayed-questions__pos regular_14">Менеджер отдела продаж</span>
+            </div>
+            <form action="#" class="stayed-questions__form">
+                <label class="stayed-questions__label">
+                    <input type="text" name="Имя" class="input-reset input-primary stayed-questions__input"
+                        placeholder="Имя">
+                </label>
+                <label class="stayed-questions__label">
+                    <input type="tel" name="Телефон" class="input-reset input-primary stayed-questions__input"
+                        placeholder="Телефон">
+                </label>
+                <label class="stayed-questions__label">
+                    <input type="email" name="Почта" class="input-reset input-primary stayed-questions__input"
+                        placeholder="Почта">
+                </label>
+                <button type="submit" class="btn-reset btn-secondary btn-secondary--arrow stayed-questions__btn">
+                    Отправить
+                    <svg>
+                        <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                    </svg>
+                </button>
+                <span class="stayed-questions__agreement form-agreement">
+                    Согласен на обработку персональных данных
+                    и рекламно-информационные рассылки
+                </span>
+            </form>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer_wrap">
+      <div class="footer__col">
+        <h3 class="footer__title"><img src="./images/icons/realty_pre.svg" alt="" class="footer__title_pre" /> VSN Realty </h3>
+        <ul>
+          <li><a href="">Новостройки Москвы</a></li>
+          <li><a href="">Новостройки Подмосковья</a></li>
+          <li><a href="">Вторичная недвижимость</a></li>
+          <li><a href="">Коммерческая недвижимость</a></li>
+          <li><a href="">Ипотека</a></li>
+          <li><a href="">Сервисы</a></li>
+          <li><a href="">Каталог ЖК</a></li>
+        </ul>
+
+        <a href="#" class="footer_titlelink">
+          
+          <h3 class="footer__title"><img src="./images/icons/ipoteka_pre.svg" alt="" class="footer__title_pre">Ipoteka Group <img src="./images/icons/link_arr.svg" alt="" class="footer__title_arr">  </h3> 
+        </a>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title"><img src="./images/icons/business_pre.svg" alt="" class="footer__title_pre"> VSN Business</h3>
+        <ul>
+          <li><a href="">Новостройки Москвы</a></li>
+          <li><a href="">Квартиры в построенных домах</a></li>
+          <li><a href="">Лофты и апартаменты</a></li>
+          <li><a href="">Москва-Сити </a></li>
+          <li><a href="">Пентхаусы Москвы  </a></li>
+          <li><a href="">Каталог ЖК</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Компания</h3>
+        <ul>
+          <li><a href="">Кейсы </a></li>
+          <li><a href="">Центр обучения</a></li>
+          <li><a href="">Партнеры</a></li>
+          <li><a href="">Награды</a></li>
+          <li><a href="">Корпоративная жизнь</a></li>
+          <li><a href="">Карьера в компании</a></li>
+          <li><a href="">Пресс центр</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <a href="tel:+74951864436" class="footer_phone">7 (495) 186-44-36</a>
+        <span class="footer_phone__under">Для жителей Москвы и Московской области</span>
+        <a href="tel:88008000000" class="footer_phone">8 (800) 800-00-00</a>
+        <span class="footer_phone__under">Бесплатный звонок по России</span>
+        <div class="footer_social">
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/tg.svg" alt=""> <span>Telegram</span>
+          </a>
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/wh.svg" alt=""> <span>Whatsapp</span>
+          </a>
+        </div>
+
+        <span class="footer_phone__under">Адрес главного офиса</span>
+        <div class="footer_address">
+          Москва, Новодмитровская ул., д. 2, корп. 1, <br>
+          МФК «Савеловский Сити» (Жёлтая башня) <br>
+        </div>
+        <div class="footer_address">
+          
+          Ежеденевно, 09:00 – 18:00
+        </div>
+
+        <a href="mailto:vsnr@vsnr.ru" class="footer_email">vsnr@vsnr.ru</a>
+
+        <a href="#" class="footer_office">Офисы продаж</a>
+
+        <div class="footer_social">
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/vk.svg" alt="">
+          </a>
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/tg.svg" alt="">
+          </a>
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/yt.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer_bottom">
+      <div class="footer_bottom__descr">
+        Опубликованная на данном сайте информация носит исключительно информационный характер и не является публичной офертой, определяемой положениями ст. 437 Гражданского кодекса Российской Федерации.
+      </div>
+
+      <div class="footer_bottom__wrap">
+        <div class="footer_bottom__privacy">
+          <div class="copyright">
+            © 2008 — 2021.VSN Realty. Все права защищены.
+          </div>
+          <a href="#" class="politic">
+            Политика конфиденциальности
+          </a>
+        </div>
+        <div class="footer_bottom__createdby">
+          Сделано в A M I O
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
